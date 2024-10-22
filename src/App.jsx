@@ -1,7 +1,7 @@
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 
 // Component Imports
-import NavMenu from './src/NavMenu.jsx';
+import NavMenu from './NavMenu';
 import ItemDetail from './ItemDetail';
 import AdminPanel from './AdminPanel';
 import './App.css';
