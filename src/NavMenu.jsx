@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { supabase } from './supabase';
-import 'Navmenu.css'; // Import the CSS for styling
+import './NavMenu.css'; // Import the CSS for styling
 
 function NavMenu() {
   const [items, setItems] = useState([]);
