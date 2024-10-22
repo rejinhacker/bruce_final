@@ -1,0 +1,107 @@
+/* Styles for admin panel */
+.admin-panel {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  background: #fff; /* Optional: adds contrast */
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* Subtle shadow for depth */
+}
+
+h2, h3 {
+  text-align: center;
+}
+
+.item-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.item {
+  background: #f9f9f9;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  border: 1px solid #eaeaea;
+  display: flex;
+  justify-content: space-between; /* Distributes space between items */
+  align-items: center; /* Align buttons vertically center */
+}
+
+.item button {
+  padding: 8px 12px; /* Adjust button padding for better sizing */
+  margin-left: 10px; /* Adds spacing between buttons */
+  border-radius: 4px;
+  border: none;
+  background-color: #007bff;
+  color: white;
+  cursor: pointer;
+}
+
+.item button.delete {
+  background-color: #dc3545; /* Distinctive color for delete */
+}
+
+.item button:hover {
+  background-color: #0056b3; /* Hover effect for Edit */
+}
+
+.item button.delete:hover {
+  background-color: #c82333; /* Hover effect for Delete */
+}
+
+.item-content {
+  flex-grow: 1; /* Takes up all available space */
+}
+
+.item-buttons {
+  display: flex;
+  flex-shrink: 0; /* Prevent buttons from shrinking */
+  justify-content: flex-end; /* Align buttons to the right */
+}
+.add-form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 20px; /* Added space above the form */
+}
+
+.add-form input, .add-form button {
+  flex: 1;
+  min-width: 150px;
+  padding: 8px;
+}
+
+.add-form button {
+  background-color: #28a745;
+  color: white;
+}
+
+.add-form button:hover {
+  background-color: #218838;
+}
+
+.message {
+  color: green;
+  text-align: center;
+  margin-top: 10px; /* Added space above message */
+}
+
+@media (max-width: 768px) {
+  .item {
+      flex-direction: column;
+      align-items: stretch;
+  }
+  .item button {
+    margin-left: 0;
+    margin-top: 5px;
+    width: 100%;
+    border: 2px solid black; /* Ensure black border is visible in mobile */
+}
+  .add-form {
+      flex-direction: column;
+  }
+
+  .add-form input, .add-form button {
+      width: 100%; /* Full width for better mobile usability */
+  }
+}

@@ -1,0 +1,56 @@
+/* Base styles for the nav menu */
+.nav-menu {
+  background-color: #2dae3c;
+  color: #fff;
+  padding: 0 20px;  /* Added horizontal padding for alignment */
+}
+
+.menu-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: row; /* Default for large screens */
+  align-items: center; /* Align items vertically in the center */
+}
+
+.menu-list li {
+  padding: 10px 15px; /* Increased padding for better touch target size */
+}
+
+.menu-list li a {
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out; /* Smooth transition for hover effects */
+}
+
+.menu-list li a:hover, .menu-list li a:focus {
+  color: #ddd; /* Lighter color on hover/focus for better visibility */
+  background-color: rgba(255, 255, 255, 0.2); /* Subtle background highlight */
+}
+
+.menu-toggle {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 24px;
+  cursor: pointer;
+  display: none; /* Hidden by default, visible on small screens */
+}
+
+/* Responsive styles for mobile */
+@media (max-width: 768px) {
+  .menu-list {
+    display: none; /* Hide menu by default on small screens */
+    flex-direction: column; /* Stack vertically on smaller screens */
+    width: 100%; /* Full width for better touch interaction */
+  }
+
+  .menu-list.active {
+    display: flex; /* Show menu when the 'active' class is added */
+  }
+
+  .menu-toggle {
+    display: block; /* Show the toggle button on small screens */
+  }
+}
