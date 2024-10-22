@@ -1,56 +1,56 @@
 /* Base styles for the nav menu */
 .nav-menu {
-  background-color: #2dae3c;
-  color: #fff;
-  padding: 0 20px;  /* Added horizontal padding for alignment */
+  background-color: #2dae3c; /* Green background for the navbar */
+  color: #fff; /* White text color for contrast */
+  padding: 0 20px;  /* Horizontal padding for inner spacing */
 }
 
 .menu-list {
-  list-style: none;
+  list-style: none; /* Remove default list styling */
   padding: 0;
   margin: 0;
-  display: flex;
-  flex-direction: row; /* Default for large screens */
-  align-items: center; /* Align items vertically in the center */
+  display: flex; /* Use flexbox for horizontal layout */
+  flex-direction: row; /* Items laid out in a row */
+  align-items: center; /* Center items vertically */
 }
 
 .menu-list li {
-  padding: 10px 15px; /* Increased padding for better touch target size */
+  padding: 10px 15px; /* Padding around each list item for better clickability */
 }
 
 .menu-list li a {
-  color: white;
-  text-decoration: none;
+  color: white; /* White color for links for readability */
+  text-decoration: none; /* No underline on links */
   transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out; /* Smooth transition for hover effects */
 }
 
 .menu-list li a:hover, .menu-list li a:focus {
-  color: #ddd; /* Lighter color on hover/focus for better visibility */
-  background-color: rgba(255, 255, 255, 0.2); /* Subtle background highlight */
+  color: #ddd; /* Light grey color on hover/focus for visual feedback */
+  background-color: rgba(255, 255, 255, 0.2); /* Slight background highlight on hover/focus */
 }
 
 .menu-toggle {
-  background: none;
-  border: none;
-  color: white;
-  font-size: 24px;
-  cursor: pointer;
-  display: none; /* Hidden by default, visible on small screens */
+  background: none; /* No background for the toggle button */
+  border: none; /* No border for a cleaner look */
+  color: white; /* White color to match the nav bar */
+  font-size: 24px; /* Larger font size for better visibility */
+  cursor: pointer; /* Pointer cursor on hover */
+  display: none; /* Hidden by default, shown on small screens */
 }
 
-/* Responsive styles for mobile */
+/* Responsive styles for mobile devices */
 @media (max-width: 768px) {
   .menu-list {
-    display: none; /* Hide menu by default on small screens */
-    flex-direction: column; /* Stack vertically on smaller screens */
-    width: 100%; /* Full width for better touch interaction */
+    display: none; /* Hide the menu by default on small screens */
+    flex-direction: column; /* Stack menu items vertically */
+    width: 100%; /* Full width for easier interaction */
   }
 
   .menu-list.active {
-    display: flex; /* Show menu when the 'active' class is added */
+    display: flex; /* Show the menu when active (i.e., toggle button clicked) */
   }
 
   .menu-toggle {
-    display: block; /* Show the toggle button on small screens */
+    display: block; /* Display the toggle button on small screens */
   }
 }
