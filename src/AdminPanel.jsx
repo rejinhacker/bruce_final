@@ -62,6 +62,8 @@ function AdminPanel() {
     setMessage('Item updated successfully!');
   };
 
+
+  //This is what user sees
   return (
     <div className="admin-panel">
       <h2>Admin Panel</h2>

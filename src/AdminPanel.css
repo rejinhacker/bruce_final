@@ -43,7 +43,7 @@ h2, h3 {
 
 /* Specific style for delete buttons */
 .item button.delete {
-  background-color: #dc3545; /* Red background for delete actions */
+  background-color: #dc3545 ; /* Red background for delete actions */
 }
 
 /* Hover effects for all buttons */

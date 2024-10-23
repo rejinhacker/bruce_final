@@ -35,6 +35,8 @@ function ItemDetail() {
     fetchItemDetails();
   }, [id]); // Re-run the effect if 'id' changes
 
+
+  //This is what user sees
   return (
     <div className="item-detail-container">
       {loading ? (
