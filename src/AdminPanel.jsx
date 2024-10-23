@@ -79,6 +79,7 @@ function AdminPanel() {
                 <input value={editRecord.class} onChange={(e) => setEditRecord({ ...editRecord, class: e.target.value })} />
                 <input value={editRecord.description} onChange={(e) => setEditRecord({ ...editRecord, description: e.target.value })} />
                 <input value={editRecord.containment} onChange={(e) => setEditRecord({ ...editRecord, containment: e.target.value })} />
+                <input value={editRecord.image} onChange={(e) => setEditRecord({ ...editRecord, image: e.target.value })} />
                 <button onClick={saveEdit}>Save</button>
                 <button onClick={() => setEditRecord(null)}>Cancel</button>
               </>
