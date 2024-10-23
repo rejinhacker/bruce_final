@@ -15,7 +15,7 @@ function App() {
         {/* Routes define different views based on the path */}
         <Routes>
           {/* Home Route: Default landing page */}
-          <Route path="/" element={<h1 className="welcome-message">Welcome to Rejin Application</h1>} />
+          <Route path="/" element={<h1 className="welcome-message">Welcome to SCP CRUD APPLICATION</h1>} />
 
           {/* Item Detail Route: Shows details for a specific SCP item identified by :id */}
           <Route path="/item/:id" element={<ItemDetail />} />
